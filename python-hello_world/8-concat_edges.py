@@ -1,3 +1,5 @@
 #!/usr/bin/python3
-str = "Holberton School"
-print(str[3:8] + str[0:3] + str[-2:] + str[8:-2])
+str1 = "object-oriented programming with Python"
+str2 = str1[:19]
+str3 = str1[-6:]
+print(str2 + str3)
