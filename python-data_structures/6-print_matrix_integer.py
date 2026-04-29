@@ -1,5 +1,5 @@
 #!/usr/bin/python3def 
-print_matrix_integer(matrix=[[]]):
+def print_matrix_integer(matrix=[[]]):
     for row in matrix:
         for i in range(len(row)):
             if i != len(row) - 1:
@@ -7,4 +7,3 @@ print_matrix_integer(matrix=[[]]):
             else:
                 print("{:d}".format(row[i]), end="")
         print()
-        
