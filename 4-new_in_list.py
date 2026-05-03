@@ -1,12 +1,31 @@
 #!/usr/bin/python3
-def new_in_list(my_list, idx, element):
-    # Create a copy of the original list
-    new_list = my_list[:]
+def list_division(my_list_1, my_list_2, list_length):
+    result = []
 
-    # Check index validity
-    if idx < 0 or idx >= len(my_list):
-        return new_list
+    for i in range(list_length):
+        try:
+            # Try to access elements
+            a = my_list_1[i]
+            b = my_list_2[i]
 
-    # Replace the element at the given index
-    new_list[idx] = element
-    return new_list
+            # Check types
+            if not isinstance(a, (int, float)) or not isinstance(b, (int, float)):
+                raise TypeError
+
+            # Perform division
+            value = a / b
+
+        except ZeroDivisionError:
+            print("division by 0")
+            value = 0
+        except TypeError:
+            print("wrong type")
+            value = 0
+        except IndexError:
+            print("out of range")
+            value = 0
+        finally:
+            result.append(value)
+
+    return result
+    
