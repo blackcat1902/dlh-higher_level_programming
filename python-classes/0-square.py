@@ -1,4 +1,14 @@
+
 #!/usr/bin/python3
+"""
+This module defines a Square class.
+The Square class is currently empty and serves as a base for future development.
+"""
+
+
 class Square:
-    """An empty class that defines a square"""
+    """
+    This class defines a square.
+    It does not contain any attributes or methods for now.
+    """
     pass
