@@ -1,1 +1,4 @@
-# dlh-higher_level_programming
+# Python Classes
+
+This project introduces object-oriented programming concepts in Python.
+
