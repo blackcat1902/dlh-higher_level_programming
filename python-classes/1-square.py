@@ -1,4 +1,3 @@
-
 #!/usr/bin/python3
 """
 This module defines a Square class.
@@ -19,3 +18,4 @@ class Square:
             size: The size of the square (no type or value validation).
         """
         self.__size = size
+
