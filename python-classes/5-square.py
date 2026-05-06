@@ -10,7 +10,7 @@ class Square:
             size must be an integer
             size must be >= 0
         """
-        self.__size =size
+        self.size =size
 
 
     @property
@@ -37,5 +37,5 @@ class Square:
         if self.__size == 0:
             print ()
             return 
-        for i range (self.__size)
-        print ("#" * self.__size)
+        for i in range (self.__size):
+            print ("#" * self.__size)
