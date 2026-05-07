@@ -54,11 +54,11 @@ class Rectangle:
         for i in range(self.__height):
             row.append("#" * self.__width)
         return "\n".join(row)
-        
+
     def __repr__(self):
         """ should return a string representation of the rectangle to be able to recreate a new instance by using eval"""
         return "Rectangle({}, {})".format(self.__width,  self.__height)
 
     def __del__(self):
         """ prints a message when an instance of Rectangle is deleted """
-         print ("Bye rectangle...")
+        print ("Bye rectangle...")
