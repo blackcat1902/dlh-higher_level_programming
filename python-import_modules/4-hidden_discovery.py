@@ -5,5 +5,3 @@ if __name__ == "__main__":
     filtered_names = [name for name in names if not name.startswith("__")]
     for name in sorted(filtered_names):
         print(name)
-
-        
