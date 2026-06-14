@@ -3,6 +3,5 @@ import hidden_4
 if __name__ == "__main__":
     names = dir(hidden_4)
     for name in names:
-        # Filter out any names that start with double underscores
         if not name.startswith("__"):
             print(name)
